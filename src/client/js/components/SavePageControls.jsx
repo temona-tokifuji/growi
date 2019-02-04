@@ -53,6 +53,7 @@ class SavePageControls extends React.PureComponent {
 
     const config = this.props.crowi.getConfig();
     const isAclEnabled = config.isAclEnabled;
+    const isRootPage = this.props.pagePath === '/';
     const labelSubmitButton = this.state.pageId == null ? t('Create') : t('Update');
     const labelOverwriteScopes = t('page_edit.overwrite_scopes', { operation: labelSubmitButton });
 
@@ -68,9 +69,9 @@ class SavePageControls extends React.PureComponent {
               slackChannels={this.props.slackChannels} />
         </div>
 
-        {isAclEnabled &&
+        { isAclEnabled &&
           <div className="mr-2">
-            <GrantSelector crowi={this.props.crowi}
+            <GrantSelector crowi={this.props.crowi} disabled={isRootPage}
                 ref={(elem) => {
                   if (this.refs.grantSelector == null) {
                     this.refs.grantSelector = elem.getWrappedInstance();

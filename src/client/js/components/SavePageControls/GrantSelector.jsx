@@ -187,6 +187,7 @@ class GrantSelector extends React.Component {
     return (
       <FormGroup className="grant-selector m-b-0">
         <FormControl componentClass="select" placeholder="select" defaultValue={selectedValue} bsClass={bsClassName} className="btn-group-sm selectpicker"
+          disabled={this.props.disabled}
           onChange={this.changeGrantHandler}
           inputRef={ el => this.grantSelectorInputEl=el }>
 
@@ -240,9 +241,11 @@ class GrantSelector extends React.Component {
   }
 
   render() {
+    const isDisabled = this.props.disabled;
+
     return <React.Fragment>
-      {this.renderGrantSelector()}
-      {this.renderSelectGroupModal()}
+      { this.renderGrantSelector() }
+      { !isDisabled && this.renderSelectGroupModal() }
     </React.Fragment>;
   }
 }
@@ -250,6 +253,7 @@ class GrantSelector extends React.Component {
 GrantSelector.propTypes = {
   t: PropTypes.func.isRequired,               // i18next
   crowi: PropTypes.object.isRequired,
+  disabled: PropTypes.bool,
   grant: PropTypes.number,
   grantGroupId: PropTypes.string,
   grantGroupName: PropTypes.string,
