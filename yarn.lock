@@ -186,17 +186,15 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.0.tgz#5a7306e367c539b9f6543499de8dd519fac37a8b"
 
-"@types/node@*":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.3.0.tgz#3a129cda7c4e5df2409702626892cb4b96546dd5"
+"@types/node@*", "@types/node@^10.12.12", "@types/node@^10.12.26":
+  version "10.14.16"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.16.tgz#4d690c96cbb7b2728afea0e260d680501b3da5cf"
+  integrity sha512-/opXIbfn0P+VLt+N8DE4l8Mn8rbhiJgabU96ZJ0p9mxOkIks5gh6RUnpHak7Yh0SFkyjO/ODbxsQQPV2bpMmyA==
 
-"@types/node@^7.0.21", "@types/node@^7.0.23":
-  version "7.0.52"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.52.tgz#8990d3350375542b0c21a83cd0331e6a8fc86716"
-
-"@types/passport@^0.3.3":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@types/passport/-/passport-0.3.5.tgz#2089c7046d120e8bb92aa4ed86338c9c62ef7853"
+"@types/passport@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/passport/-/passport-1.0.1.tgz#bf082e29497d09410e13c260903571a489bf9c2a"
+  integrity sha512-oK87JjN8i8kmqb0RN0sCUB/ZjrWf3b8U45eAzZVy1ssYYgBrMOuALmvoqp7MglsilXAjxum+LS29VQqeQx6ddA==
   dependencies:
     "@types/express" "*"
 
@@ -3236,12 +3234,6 @@ double-ended-queue@^2.1.0-0:
   version "2.1.0-0"
   resolved "https://registry.yarnpkg.com/double-ended-queue/-/double-ended-queue-2.1.0-0.tgz#103d3527fd31528f40188130c841efdd78264e5c"
 
-dtrace-provider@^0.7.0:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/dtrace-provider/-/dtrace-provider-0.7.1.tgz#c06b308f2f10d5d5838aec9c571e5d588dc71d04"
-  dependencies:
-    nan "^2.3.3"
-
 dtrace-provider@~0.8:
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/dtrace-provider/-/dtrace-provider-0.8.5.tgz#98ebba221afac46e1c39fd36858d8f9367524b92"
@@ -3798,7 +3790,7 @@ etag@1.8.1, etag@^1.8.1, etag@~1.8.1:
 
 event-stream@^3.3.2, event-stream@~3.3.0:
   version "3.3.4"
-  resolved "http://registry.npmjs.org/event-stream/-/event-stream-3.3.4.tgz#4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571"
+  resolved "https://registry.npmjs.org/event-stream/-/event-stream-3.3.4.tgz#4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571"
   dependencies:
     duplexer "~0.1.1"
     from "~0"
@@ -3980,7 +3972,7 @@ express@^4.16.1:
 
 express@^4.16.3:
   version "4.16.3"
-  resolved "http://registry.npmjs.org/express/-/express-4.16.3.tgz#6af8a502350db3246ecc4becf6b5a34d22f7ed53"
+  resolved "https://registry.npmjs.org/express/-/express-4.16.3.tgz#6af8a502350db3246ecc4becf6b5a34d22f7ed53"
   dependencies:
     accepts "~1.3.5"
     array-flatten "1.1.1"
@@ -4208,7 +4200,7 @@ finalhandler@1.1.0:
 
 finalhandler@1.1.1:
   version "1.1.1"
-  resolved "http://registry.npmjs.org/finalhandler/-/finalhandler-1.1.1.tgz#eebf4ed840079c83f4249038c9d703008301b105"
+  resolved "https://registry.npmjs.org/finalhandler/-/finalhandler-1.1.1.tgz#eebf4ed840079c83f4249038c9d703008301b105"
   dependencies:
     debug "2.6.9"
     encodeurl "~1.0.2"
@@ -6072,19 +6064,21 @@ ldap-filter@0.2.2:
   dependencies:
     assert-plus "0.1.5"
 
-ldapauth-fork@^4.0.1:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/ldapauth-fork/-/ldapauth-fork-4.0.2.tgz#f87d55908ba4917cca06d8ed6e173cdd65e908c9"
+ldapauth-fork@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/ldapauth-fork/-/ldapauth-fork-4.2.0.tgz#3d2f809f973deb127a35eb523135661b7013e9d9"
+  integrity sha512-DFYhOO9UPX/fIUnwAjJ4zCq2osR3pyS9TK24oBRLHj7+iw9OAbckHLcdDkgI//IajUEsF6Ngz0uXod6A88L2HA==
   dependencies:
     "@types/ldapjs" "^1.0.0"
-    "@types/node" "^7.0.21"
+    "@types/node" "^10.12.12"
     bcryptjs "^2.4.0"
-    ldapjs "^1.0.1"
-    lru-cache "^4.0.2"
+    ldapjs "^1.0.2"
+    lru-cache "^5.1.1"
 
-ldapjs@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ldapjs/-/ldapjs-1.0.1.tgz#352b812ae74b0a8e96549a4b896060eee1b9a546"
+ldapjs@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ldapjs/-/ldapjs-1.0.2.tgz#544ff7032b7b83c68f0701328d9297aa694340f9"
+  integrity sha1-VE/3Ayt7g8aPBwEyjZKXqmlDQPk=
   dependencies:
     asn1 "0.2.3"
     assert-plus "^1.0.0"
@@ -6096,7 +6090,7 @@ ldapjs@^1.0.1:
     vasync "^1.6.4"
     verror "^1.8.1"
   optionalDependencies:
-    dtrace-provider "^0.7.0"
+    dtrace-provider "~0.8"
 
 levn@^0.3.0, levn@~0.3.0:
   version "0.3.0"
@@ -6376,7 +6370,7 @@ lru-cache@4.1.x:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-lru-cache@^4.0.1, lru-cache@^4.0.2:
+lru-cache@^4.0.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.1.tgz#622e32e82488b49279114a4f9ecf45e7cd6bba55"
   dependencies:
@@ -7797,13 +7791,14 @@ passport-google-auth@^1.0.2:
     googleapis "^16.0.0"
     passport-strategy "1.x"
 
-passport-ldapauth@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/passport-ldapauth/-/passport-ldapauth-2.0.0.tgz#42dff004417185d0a4d9f776a3eed8d4731fd689"
+passport-ldapauth@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/passport-ldapauth/-/passport-ldapauth-2.1.3.tgz#833530c31c1e2f8d2ab7a1ff97339291074dc6f6"
+  integrity sha512-23n425UTasN6XhcXG0qQ0h0YrS/zfo8kNIEhSLfPsNpglhYhhQFfB1pmDc5RrH+Kiz5fKLkki5BpvkKHCwkixg==
   dependencies:
-    "@types/node" "^7.0.23"
-    "@types/passport" "^0.3.3"
-    ldapauth-fork "^4.0.1"
+    "@types/node" "^10.12.26"
+    "@types/passport" "^1.0.0"
+    ldapauth-fork "^4.2.0"
     passport-strategy "^1.0.0"
 
 passport-local@^1.0.0:
@@ -7980,7 +7975,7 @@ pify@^4.0.0:
 
 pikaday@1.5.1:
   version "1.5.1"
-  resolved "http://registry.npmjs.org/pikaday/-/pikaday-1.5.1.tgz#0a48549bc1a14ea1d08c44074d761bc2f2bfcfd3"
+  resolved "https://registry.npmjs.org/pikaday/-/pikaday-1.5.1.tgz#0a48549bc1a14ea1d08c44074d761bc2f2bfcfd3"
   optionalDependencies:
     moment "2.x"
 
